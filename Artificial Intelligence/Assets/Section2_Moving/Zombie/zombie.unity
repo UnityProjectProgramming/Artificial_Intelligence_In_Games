@@ -204,7 +204,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 41621472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.59, z: 1.8}
+  m_LocalPosition: {x: 0, y: 0.59, z: 6.769}
   m_LocalScale: {x: 0.38823295, y: 0.38823295, z: 0.38823295}
   m_Children:
   - {fileID: 1072000020}
@@ -342,7 +342,7 @@ Prefab:
       objectReference: {fileID: 9100000, guid: 079a14602eddc4f8ca4bb47450211b3f, type: 2}
     - target: {fileID: 9500000, guid: 3d664c5f262774eb49e3928ca6b6db2a, type: 3}
       propertyPath: m_ApplyRootMotion
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3d664c5f262774eb49e3928ca6b6db2a, type: 3}
@@ -600,3 +600,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goal: {fileID: 41621477}
+  rotSpeed: 0.8

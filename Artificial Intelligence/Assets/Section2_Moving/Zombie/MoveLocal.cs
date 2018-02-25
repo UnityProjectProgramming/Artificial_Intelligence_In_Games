@@ -20,9 +20,9 @@ public class MoveLocal : MonoBehaviour {
 
         Vector3 direction = lookAtGoal - transform.position;
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), Time.deltaTime * rotSpeed);
-        if(direction.magnitude > accuracy)
+        /*if(direction.magnitude > accuracy)
         {
             transform.Translate(0, 0, speed * Time.deltaTime);
-        }
+        }*/
     }
 }
