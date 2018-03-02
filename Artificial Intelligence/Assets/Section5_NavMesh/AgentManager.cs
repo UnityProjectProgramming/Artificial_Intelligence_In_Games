@@ -11,7 +11,7 @@ public class AgentManager : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        agents = GameObject.FindGameObjectsWithTag("ai");
+        agents = GameObject.FindGameObjectsWithTag("Player");
 	}
 	
 	// Update is called once per frame
