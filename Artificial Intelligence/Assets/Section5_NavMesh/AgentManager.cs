@@ -15,7 +15,7 @@ public class AgentManager : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update ()
+	/*void Update ()
     {
 		if(Input.GetMouseButtonDown(0))
         {
@@ -42,5 +42,5 @@ public class AgentManager : MonoBehaviour {
                 print("Faild to raycast");
             }
         }
-	}
+	}*/
 }
