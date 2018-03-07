@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: 8716d2988f3584c57822bb5d173e6942
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: joint1 1
+    100004: lowleg_R
+    100006: joint2 1
+    100008: joint2
+    100010: heel_R
+    100012: heel_L
+    100014: upleg_R
+    100016: upleg_L
+    100018: joint1
+    100020: thumb2_R
+    100022: lowleg_L
+    100024: finger3e_R
+    100026: thumb3e_R
+    100028: finger1_R
+    100030: thumb1_R
+    100032: lowarm_R
+    100034: finger2_R
+    100036: uparm_R
+    100038: hand_R
+    100040: thumb3e_L
+    100042: elbow_R
+    100044: thumb1_L
+    100046: shoulder_R
+    100048: finger2_L
+    100050: thumb2_L
+    100052: hand_L
+    100054: finger3e_L
+    100056: elbow_L
+    100058: finger1_L
+    100060: shoulder_L
+    100062: lowarm_L
+    100064: head
+    100066: uparm_L
+    100068: spine4
+    100070: heade
+    100072: spine2
+    100074: neck
+    100076: roothandle
+    100078: spine3
+    100080: gun_model
+    100082: spine1
+    100084: robotskin1
+    100086: gun
+    400000: //RootNode
+    400002: joint1 1
+    400004: lowleg_R
+    400006: joint2 1
+    400008: joint2
+    400010: heel_R
+    400012: heel_L
+    400014: upleg_R
+    400016: upleg_L
+    400018: joint1
+    400020: thumb2_R
+    400022: lowleg_L
+    400024: finger3e_R
+    400026: thumb3e_R
+    400028: finger1_R
+    400030: thumb1_R
+    400032: lowarm_R
+    400034: finger2_R
+    400036: uparm_R
+    400038: hand_R
+    400040: thumb3e_L
+    400042: elbow_R
+    400044: thumb1_L
+    400046: shoulder_R
+    400048: finger2_L
+    400050: thumb2_L
+    400052: hand_L
+    400054: finger3e_L
+    400056: elbow_L
+    400058: finger1_L
+    400060: shoulder_L
+    400062: lowarm_L
+    400064: head
+    400066: uparm_L
+    400068: spine4
+    400070: heade
+    400072: spine2
+    400074: neck
+    400076: roothandle
+    400078: spine3
+    400080: gun_model
+    400082: spine1
+    400084: robotskin1
+    400086: gun
+    2300000: gun_model
+    3300000: gun_model
+    4300000: robotskin1
+    4300002: gun_model
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: roothandle
+    13700002: robotskin1
+  materials:
+    importMaterials: 1
+    materialName: 3
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 1
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

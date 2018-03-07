@@ -1,0 +1,263 @@
+fileFormatVersion: 2
+guid: 4bdc3493c599840aba2df74438901609
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: spine2
+    100002: L_IK_ArmikHandle1
+    100004: roothandle
+    100006: gun_model
+    100008: R_IK_ellbowhandle
+    100010: ammo
+    100012: L_IK_handhandle
+    100014: gun
+    100016: R_IK_ArmikHandle1
+    100018: robotskin1
+    100020: R_IK_FootikToe
+    100022: L_kneehandle
+    100024: //RootNode
+    100026: R_IK_FootikAnkle
+    100028: R_kneehandle
+    100030: R_IK_FootikBall
+    100032: R_IK_Foottoe
+    100034: R_IK_FootheelPivot
+    100036: R_IK_Footankle
+    100038: L_IK_FootikToe
+    100040: R_IK_FoottoePivot
+    100042: L_IK_FootikAnkle
+    100044: R_IK_FootnurbsCircle2
+    100046: L_IK_FootikBall
+    100048: L_IK_Foottoe
+    100050: L_IK_FootheelPivot
+    100052: L_IK_Footankle
+    100054: headhandle
+    100056: L_IK_FoottoePivot
+    100058: chesthandle
+    100060: L_IK_FootnurbsCircle1
+    100062: joint1 1
+    100064: lowleg_R
+    100066: joint2 1
+    100068: joint2
+    100070: heel_R
+    100072: heel_L
+    100074: upleg_R
+    100076: upleg_L
+    100078: joint1
+    100080: thumb2_R
+    100082: lowleg_L
+    100084: finger3e_R
+    100086: thumb3e_R
+    100088: finger1_R
+    100090: thumb1_R
+    100092: lowarm_R
+    100094: finger2_R
+    100096: uparm_R
+    100098: hand_R
+    100100: thumb3e_L
+    100102: elbow_R
+    100104: thumb1_L
+    100106: shoulder_R
+    100108: finger2_L
+    100110: thumb2_L
+    100112: hand_L
+    100114: finger3e_L
+    100116: elbow_L
+    100118: finger1_L
+    100120: heade
+    100122: lowarm_L
+    100124: head
+    100126: uparm_L
+    100128: spine4
+    100130: shoulder_L
+    100132: spine1
+    100134: neck
+    100136: L_IK_ellbowhandle
+    100138: spine3
+    400000: spine2
+    400002: L_IK_ArmikHandle1
+    400004: roothandle
+    400006: gun_model
+    400008: R_IK_ellbowhandle
+    400010: ammo
+    400012: L_IK_handhandle
+    400014: gun
+    400016: R_IK_ArmikHandle1
+    400018: robotskin1
+    400020: R_IK_FootikToe
+    400022: L_kneehandle
+    400024: //RootNode
+    400026: R_IK_FootikAnkle
+    400028: R_kneehandle
+    400030: R_IK_FootikBall
+    400032: R_IK_Foottoe
+    400034: R_IK_FootheelPivot
+    400036: R_IK_Footankle
+    400038: L_IK_FootikToe
+    400040: R_IK_FoottoePivot
+    400042: L_IK_FootikAnkle
+    400044: R_IK_FootnurbsCircle2
+    400046: L_IK_FootikBall
+    400048: L_IK_Foottoe
+    400050: L_IK_FootheelPivot
+    400052: L_IK_Footankle
+    400054: headhandle
+    400056: L_IK_FoottoePivot
+    400058: chesthandle
+    400060: L_IK_FootnurbsCircle1
+    400062: joint1 1
+    400064: lowleg_R
+    400066: joint2 1
+    400068: joint2
+    400070: heel_R
+    400072: heel_L
+    400074: upleg_R
+    400076: upleg_L
+    400078: joint1
+    400080: thumb2_R
+    400082: lowleg_L
+    400084: finger3e_R
+    400086: thumb3e_R
+    400088: finger1_R
+    400090: thumb1_R
+    400092: lowarm_R
+    400094: finger2_R
+    400096: uparm_R
+    400098: hand_R
+    400100: thumb3e_L
+    400102: elbow_R
+    400104: thumb1_L
+    400106: shoulder_R
+    400108: finger2_L
+    400110: thumb2_L
+    400112: hand_L
+    400114: finger3e_L
+    400116: elbow_L
+    400118: finger1_L
+    400120: heade
+    400122: lowarm_L
+    400124: head
+    400126: uparm_L
+    400128: spine4
+    400130: shoulder_L
+    400132: spine1
+    400134: neck
+    400136: L_IK_ellbowhandle
+    400138: spine3
+    2300000: gun_model
+    2300002: ammo
+    2300004: headhandle
+    3300000: gun_model
+    3300002: ammo
+    3300004: headhandle
+    4300000: robotskin1
+    4300002: ammo
+    4300004: gun_model
+    4300006: headhandle
+    7400000: idle
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: roothandle
+    13700002: robotskin1
+  materials:
+    importMaterials: 1
+    materialName: 3
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 400
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 1
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
