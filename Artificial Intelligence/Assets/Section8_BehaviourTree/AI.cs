@@ -50,9 +50,9 @@ public class AI : MonoBehaviour
     }
 
     [Task]
-    public void PickRandomDestination()
+    public void PickDestination(float x, float y)
     {
-        Vector3 destination = new Vector3(Random.Range(-100, 100), 0, Random.Range(-100, 100));
+        Vector3 destination = new Vector3(x, 0, y);
         agent.SetDestination(destination);
         Task.current.Succeed();
     }
@@ -70,5 +70,39 @@ public class AI : MonoBehaviour
             Task.current.Succeed();
         }
     }
+
+    [Task]
+    public void TargetPlayer()
+    {
+        target = player.transform.position;
+        Task.current.Succeed();
+    }
+
+    [Task]
+    public void LookAtTarget()
+    {
+        Vector3 directionToTarget = target - transform.position;
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(directionToTarget), rotSpeed * Time.deltaTime);
+
+        if(Task.isInspected)
+        {
+            Task.current.debugInfo = string.Format("angle = {0}", Vector3.Angle(transform.forward, directionToTarget));
+        }
+
+        if(Vector3.Angle(transform.forward, directionToTarget) < 5.0f)
+        {
+            Task.current.Succeed();
+        }
+    }
+
+    [Task]
+    public bool Fire()  // It can be a bool and return true or false instead of Task.current.Succeed()/Fail()
+    {
+        GameObject bullet = GameObject.Instantiate(bulletPrefab, bulletSpawn.transform.position, bulletSpawn.transform.rotation);
+        bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.forward * 2000.0f);
+        return true;
+    }
+
+
 }
 
