@@ -98,11 +98,44 @@ public class AI : MonoBehaviour
     [Task]
     public bool Fire()  // It can be a bool and return true or false instead of Task.current.Succeed()/Fail()
     {
-        GameObject bullet = GameObject.Instantiate(bulletPrefab, bulletSpawn.transform.position, bulletSpawn.transform.rotation);
+        GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.transform.position, bulletSpawn.transform.rotation);
         bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.forward * 2000.0f);
         return true;
     }
 
 
+    // We can put in the Tree while CanSeePlayer and this would work as a dicorator , it would run the sequence when canseeplayer is true otherwise it wont run it.
+    [Task]
+    public bool CanSeePlayer()
+    {
+        Vector3 distance = player.transform.position - transform.position;
+
+        RaycastHit hit;
+        bool seeWall = false;
+
+        Debug.DrawRay(transform.position, distance, Color.red);
+
+        if(Physics.Raycast(transform.position, distance, out hit))
+        {
+            if(hit.collider.gameObject.tag == "wall")
+            {
+                seeWall = true;
+            }
+        }
+
+        if(Task.isInspected)
+        {
+            Task.current.debugInfo = string.Format("Wall={0}", seeWall);
+        }
+
+        if(distance.magnitude < visibleRange && !seeWall)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
 

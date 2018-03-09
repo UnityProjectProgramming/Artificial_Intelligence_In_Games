@@ -1,5 +1,6 @@
 tree("Root")
 	sequence
+		CanSeePlayer
 		TargetPlayer
 		LookAtTarget
 		Wait(5.0)
