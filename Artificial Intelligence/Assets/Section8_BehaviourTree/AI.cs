@@ -48,5 +48,27 @@ public class AI : MonoBehaviour
             health -= 10;
         }
     }
+
+    [Task]
+    public void PickRandomDestination()
+    {
+        Vector3 destination = new Vector3(Random.Range(-100, 100), 0, Random.Range(-100, 100));
+        agent.SetDestination(destination);
+        Task.current.Succeed();
+    }
+
+    [Task]
+    public void MoveToDestination()
+    {
+        if(Task.isInspected)
+        {
+            Task.current.debugInfo = string.Format("t={0:0.00}", Time.time);
+        }
+
+        if(agent.remainingDistance <= agent.stoppingDistance && !agent.pathPending)
+        {
+            Task.current.Succeed();
+        }
+    }
 }
 
