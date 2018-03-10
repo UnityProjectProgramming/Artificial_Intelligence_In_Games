@@ -137,5 +137,13 @@ public class AI : MonoBehaviour
             return false;
         }
     }
+
+    [Task]
+    bool Turn(float angle)
+    {
+        var p = transform.position + Quaternion.AngleAxis(angle, Vector3.up) * transform.forward * Time.deltaTime;
+        target = p;
+        return true;
+    }
 }
 
