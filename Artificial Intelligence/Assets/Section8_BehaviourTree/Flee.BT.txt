@@ -1,0 +1,6 @@
+tree("Root")
+	while IsHealthLessThan(40.0)
+		While InDanger(50.0)
+			sequence
+				TakeCover
+				MoveToDestination

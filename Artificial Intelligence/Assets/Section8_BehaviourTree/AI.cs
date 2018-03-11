@@ -145,5 +145,35 @@ public class AI : MonoBehaviour
         target = p;
         return true;
     }
+
+    [Task]
+    public bool IsHealthLessThan(float health)
+    {
+        return this.health < health;
+    }
+
+    [Task]
+    public bool InDanger(float minDist)
+    {
+        float distance = Vector3.Distance(player.transform.position, transform.position);
+        return (distance < minDist);
+    }
+
+    [Task]
+    public void TakeCover()
+    {
+        Vector3 awayFromPlayer = transform.position - player.transform.position;
+        Vector3 destination = transform.position + awayFromPlayer * 2; // The NPC will  will go twice as far from the player
+        agent.SetDestination(destination);
+        Task.current.Succeed();
+    }
+
+    [Task]
+    public void Expload()
+    {
+        Destroy(healthBar.gameObject);
+        Destroy(gameObject);
+        Task.current.Succeed();
+    }
 }
 
