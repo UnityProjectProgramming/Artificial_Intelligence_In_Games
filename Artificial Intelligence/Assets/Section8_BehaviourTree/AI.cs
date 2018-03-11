@@ -175,5 +175,34 @@ public class AI : MonoBehaviour
         Destroy(gameObject);
         Task.current.Succeed();
     }
+
+    [Task]
+    public void PickRandomDestination()
+    {
+        Vector3 destination = new Vector3(Random.Range(-100, 100), 0, Random.Range(-100, 100));
+        agent.SetDestination(destination);
+        Task.current.Succeed();
+    }
+
+    [Task]
+    public void SetTargetDestination()
+    {
+        agent.SetDestination(target);
+        Task.current.Succeed();
+    }
+
+    [Task]
+    bool ShotLinedUp()
+    {
+        Vector3 distance = target - transform.position;
+        if (distance.magnitude < shotRange && Vector3.Angle(transform.forward, distance) < 1.0f)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
 

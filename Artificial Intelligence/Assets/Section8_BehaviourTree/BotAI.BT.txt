@@ -1,0 +1,64 @@
+tree("Root")
+	parallel
+		repeat mute tree("Patrol")
+		repeat mute tree("Dead")
+
+
+tree("Patrol")
+	fallback
+		tree("Flee")
+		while not IsHealthLessThan(40.0)
+			fallback
+				tree("Attack")
+				tree("LookAround")
+				tree("Wander")
+
+
+tree("Flee")
+	while IsHealthLessThan(40.0)
+		While InDanger(50.0)
+			sequence
+				TakeCover
+				MoveToDestination
+
+
+tree("Attack")
+	while CanSeePlayer
+		sequence
+			TargetPlayer
+			LookAtTarget
+			fallback
+				while ShotLinedUp
+					sequence
+						Wait(1)
+						Fire
+				while not ShotLinedUp
+					sequence
+						SetTargetDestination
+						MoveToDestination
+
+
+tree("LookAround")
+	sequence
+		random
+			Turn(90.0)
+			Turn(-90.0)
+			Turn(145.0)
+			Turn(-27.0)
+		LookAtTarget
+		WaitRandom(2.0, 5.0)
+		random(2, 1)
+			Fail	
+			Succeed
+
+
+tree("Wander")
+	sequence
+		PickRandomDestination
+		MoveToDestination
+
+
+tree("Dead")
+	while IsHealthLessThan(0.1)
+		Expload
+
