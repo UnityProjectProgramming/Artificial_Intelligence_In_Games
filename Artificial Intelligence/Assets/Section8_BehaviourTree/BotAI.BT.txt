@@ -46,16 +46,18 @@ tree("LookAround")
 			Turn(145.0)
 			Turn(-27.0)
 		LookAtTarget
-		WaitRandom(2.0, 5.0)
-		random(2, 1)
-			Fail	
-			Succeed
+		Wait(1)
+		while not CanSeePlayer
+			random(2, 1)
+				Fail	
+				Succeed
 
 
 tree("Wander")
-	sequence
-		PickRandomDestination
-		MoveToDestination
+	while not CanSeePlayer
+		sequence
+			PickRandomDestination
+			MoveToDestination
 
 
 tree("Dead")

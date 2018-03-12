@@ -18,7 +18,7 @@ public class AI : MonoBehaviour
     float health = 100.0f;
     float rotSpeed = 5.0f;
 
-    float visibleRange = 80.0f;
+    float visibleRange = 100f;
     float shotRange = 40.0f;
 
     void Start()
