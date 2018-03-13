@@ -421,6 +421,7 @@ GameObject:
   - component: {fileID: 743796552}
   - component: {fileID: 743796550}
   - component: {fileID: 743796553}
+  - component: {fileID: 743796554}
   m_Layer: 0
   m_Name: Baker
   m_TagString: Untagged
@@ -581,6 +582,21 @@ MonoBehaviour:
   name: PickupFlour
   cost: 1
   target: {fileID: 1279486380}
+  workDuration: 2
+--- !u!114 &743796554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 743796543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 820eb1446828e1c48b5d2daee0e045e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Deliverbread
+  cost: 1
+  target: {fileID: 637827608}
   workDuration: 2
 --- !u!1 &818579530
 GameObject:
