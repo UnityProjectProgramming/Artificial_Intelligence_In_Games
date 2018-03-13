@@ -26,6 +26,9 @@ public class Worker : MonoBehaviour, IGoap
 	public HashSet<KeyValuePair<string,object>> CreateGoalState ()
 	{
 		HashSet<KeyValuePair<string,object>> goal = new HashSet<KeyValuePair<string,object>> ();
+
+        goal.Add(new KeyValuePair<string, object>("doJob", true));
+
 		return goal;
 	}
 
